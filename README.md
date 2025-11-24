@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
+# Decifrando a Rota 🤖⚡
 
-## Project info
+Um quiz game imersivo inspirado no universo de "The Electric State", onde você testa seus conhecimentos sobre a jornada da protagonista Michelle e seu companheiro robô amarelo pelos Estados Unidos dos anos 1990.
 
-**URL**: https://lovable.dev/projects/2bd86ffa-e925-436a-a85a-099711d02f2c
+## 🎮 Sobre o Projeto
 
-## How can I edit this code?
+Mergulhe em uma experiência retro-futurista que combina elementos de ficção científica distópica com a estética nostálgica dos anos 90. O jogo apresenta perguntas sobre controle mental via tecnologia, robôs gigantes abandonados e a misteriosa rota que Michelle percorre.
 
-There are several ways of editing your application.
+## ✨ Características
 
-**Use Lovable**
+- **Tema Visual Retro-Futurista**: Efeitos CRT e glitch animados, cores néon vibrantes e tipografia tecnológica
+- **Sistema de Ranking Global**: Compita com jogadores do mundo todo e veja sua posição no leaderboard
+- **Contador de Tempo Real**: Desafie-se a responder rapidamente para conquistar melhores pontuações
+- **Efeitos Sonoros Imersivos**: Áudio que complementa a atmosfera retro-futurista do jogo
+- **Compartilhamento Social**: Mostre suas conquistas e desafie seus amigos
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2bd86ffa-e925-436a-a85a-099711d02f2c) and start prompting.
+## 🎯 Como Jogar
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Crie sua conta ou faça login
+2. Responda às perguntas sobre o universo de "The Electric State"
+3. Complete o quiz no menor tempo possível
+4. Veja sua pontuação e posição no ranking global
+5. Compartilhe seus resultados nas redes sociais
 
-**Use your preferred IDE**
+## 🛠️ Tecnologias Utilizadas
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Este projeto foi desenvolvido com tecnologias modernas para garantir performance e uma experiência fluida:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **React** - Interface de usuário dinâmica e reativa
+- **TypeScript** - Tipagem estática para código mais confiável
+- **Tailwind CSS** - Estilização moderna e responsiva
+- **Vite** - Build tool ultra-rápida
+- **Backend em Nuvem** - Sistema de autenticação e banco de dados integrados
 
-Follow these steps:
+## 🚀 Executando Localmente
+
+### Pré-requisitos
+
+- Node.js instalado ([instalar com nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+- npm ou yarn
+
+### Passos para instalação
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone o repositório
+git clone <URL_DO_REPOSITORIO>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Entre na pasta do projeto
+cd decifrando-a-rota
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O projeto estará disponível em `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📝 Estrutura do Projeto
 
-**Use GitHub Codespaces**
+```
+src/
+├── components/       # Componentes React reutilizáveis
+├── pages/           # Páginas da aplicação
+├── assets/          # Imagens e recursos estáticos
+├── hooks/           # React hooks customizados
+├── lib/             # Utilitários e configurações
+└── integrations/    # Integrações com serviços externos
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design e Estética
 
-## What technologies are used for this project?
+O projeto segue uma estética cuidadosamente elaborada que evoca:
+- Monitores CRT dos anos 90
+- Interfaces retro-futuristas
+- Paleta de cores néon (ciano, magenta, amarelo)
+- Efeitos de glitch e scanlines
+- Tipografia tecnológica (Orbitron, Space Mono)
 
-This project is built with:
+## 🏆 Sistema de Pontuação
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+A pontuação é calculada com base em:
+- Número de respostas corretas
+- Tempo total para completar o quiz
+- Bônus por sequências de acertos
 
-## How can I deploy this project?
+## 🤝 Contribuindo
 
-Simply open [Lovable](https://lovable.dev/projects/2bd86ffa-e925-436a-a85a-099711d02f2c) and click on Share -> Publish.
+Contribuições são bem-vindas! Sinta-se à vontade para:
+- Reportar bugs
+- Sugerir novas funcionalidades
+- Melhorar a documentação
+- Adicionar novas perguntas ao quiz
 
-## Can I connect a custom domain to my Lovable project?
+## 📄 Licença
 
-Yes, you can!
+Este é um projeto de demonstração criado para fins educacionais e de entretenimento, inspirado no universo de "The Electric State".
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Desenvolvido com ⚡ e muito código
