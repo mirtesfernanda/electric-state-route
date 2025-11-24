@@ -1,7 +1,11 @@
 import { QuizGame } from "@/components/QuizGame";
+import { useAuth } from "@/hooks/useAuth";
+import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
+  const { signOut, user } = useAuth();
+
   return (
     <div 
       className="min-h-screen bg-background crt-effect"
@@ -12,7 +16,17 @@ const Index = () => {
         backgroundAttachment: "fixed",
       }}
     >
-      <header className="py-8 text-center space-y-2 px-4">
+      <header className="py-8 text-center space-y-2 px-4 relative">
+        <div className="absolute top-4 right-4">
+          <Button
+            onClick={signOut}
+            variant="outline"
+            size="sm"
+            className="font-mono"
+          >
+            Sair
+          </Button>
+        </div>
         <h1 className="text-5xl md:text-7xl font-bold neon-text uppercase tracking-wider">
           The Electric State
         </h1>
@@ -23,6 +37,11 @@ const Index = () => {
           Teste seus conhecimentos sobre o universo distópico de The Electric State.
           Atravesse o deserto digital e prove que você domina a jornada!
         </p>
+        {user && (
+          <p className="text-xs text-primary font-mono mt-2">
+            Jogador conectado
+          </p>
+        )}
       </header>
       
       <QuizGame />
