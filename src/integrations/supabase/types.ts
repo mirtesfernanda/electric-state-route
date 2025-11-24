@@ -67,21 +67,21 @@ export type Database = {
       }
     }
     Views: {
-      global_ranking: {
-        Row: {
-          avatar_url: string | null
-          created_at: string | null
-          id: string | null
-          rank: number | null
-          score: number | null
-          time_seconds: number | null
-          username: string | null
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      get_global_ranking: {
+        Args: { limit_count?: number }
+        Returns: {
+          avatar_url: string
+          created_at: string
+          id: string
+          rank: number
+          score: number
+          time_seconds: number
+          username: string
+        }[]
+      }
     }
     Enums: {
       [_ in never]: never
