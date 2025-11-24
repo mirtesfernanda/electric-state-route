@@ -1,10 +1,13 @@
 import { QuizGame } from "@/components/QuizGame";
 import { useAuth } from "@/hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Trophy, LogOut } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Index = () => {
   const { signOut, user } = useAuth();
+  const navigate = useNavigate();
 
   return (
     <div 
@@ -17,13 +20,23 @@ const Index = () => {
       }}
     >
       <header className="py-8 text-center space-y-2 px-4 relative">
-        <div className="absolute top-4 right-4">
+        <div className="absolute top-4 right-4 flex gap-2">
+          <Button
+            onClick={() => navigate("/ranking")}
+            variant="outline"
+            size="sm"
+            className="font-mono"
+          >
+            <Trophy size={16} className="mr-2" />
+            Ranking
+          </Button>
           <Button
             onClick={signOut}
             variant="outline"
             size="sm"
             className="font-mono"
           >
+            <LogOut size={16} className="mr-2" />
             Sair
           </Button>
         </div>
